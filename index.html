@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up / Log-In</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./imgs/cartoon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="main">
+        <div id="img-main">
+            <div class="img">
+                <img src="./imgs/02.jpg" onmouseover="change(event, 'over')" onmouseout="change(event, 'out')">
+            </div>
+        </div>
+
+        <div class="inpParent">
+            <h2>Sign-Up / Log-In</h2>
+            <div class="name">
+                <input type="text" placeholder="Enter your name" onfocus="focusInp(event)" onblur="blurInp(event, 'name')" />
+                <span class="name-error error"></span>
+            </div>
+
+            <div class="pass">
+                <div class="showPass">
+                    <input type="password" placeholder="Enter your password" onfocus="focusInp(event)" onblur="blurInp(event, 'pass')" />
+                    <img id="visible" src="./imgs/visiblity on.png" onclick="passVisiblility(event)" />
+                </div>
+                <span class="pass-error error"></span>
+            </div>
+
+            <div class="submit">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
