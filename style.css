@@ -41,12 +41,13 @@ img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    transition: opacity 0.5s ease, transform 0.3s ease; /* Transition on opacity and transform */
+    transition: opacity 0.5s ease, transform 0.3s ease;
+    cursor: pointer;
 }
 
 .img img:hover {
-    opacity: 0.9; /* Reduce opacity to give a hover effect */
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    opacity: 0.9;
+    transform: scale(1.05);
 }
 
 
