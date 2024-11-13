@@ -18,13 +18,13 @@
         <div class="inpParent">
             <h2>Sign-Up / Log-In</h2>
             <div class="name">
-                <input type="text" placeholder="Enter your name" onfocus="focusInp(event)" onblur="blurInp(event, 'name')" />
+                <input type="text" placeholder="Enter your name" onInput="blurInp(event, 'name')" />
                 <span class="name-error error"></span>
             </div>
 
             <div class="pass">
                 <div class="showPass">
-                    <input type="password" placeholder="Enter your password" onfocus="focusInp(event)" onblur="blurInp(event, 'pass')" />
+                    <input type="password" placeholder="Enter your password" onInput="blurInp(event, 'pass')" />
                     <img id="visible" src="./imgs/visiblity on.png" onclick="passVisiblility(event)" />
                 </div>
                 <span class="pass-error error"></span>
