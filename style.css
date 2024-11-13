@@ -96,6 +96,10 @@ input:focus {
     width: 260px;
 }
 
+.showPass:focus{
+    margin-left: 150px;
+}
+
 .showPass img {
     margin-left: 10px;
     cursor: pointer;

@@ -24,7 +24,7 @@ function blurInp(e, checkInp) {
 
     if (checkInp === 'pass') {
         if (e.target.value.length < 9) {
-            passError.innerText = 'Password must be at least 9 characters';
+            passError.innerText = 'Password should be at least 9 characters';
             passError.style.display = 'block';
             return;
         }
