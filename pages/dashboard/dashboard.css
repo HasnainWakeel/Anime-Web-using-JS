@@ -1,0 +1,79 @@
+body {
+    background-image: url('../../imgs/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#main {
+    height: 100vh;
+    background-color: rgba(19, 19, 19, 0.8);
+}
+
+.logo img{
+    width: 30%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.nav{
+    background-color: rgba(125, 125, 125, 0.788);
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+li{
+    font-size: 20px;
+    cursor: pointer;
+    transition: font-size 0.4s;
+    color: white;
+
+}
+
+li:hover{
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.items{
+    /* background-color: aqua; */
+    width: 90%;
+}
+
+button{
+    width: 20%;
+    font-size: 20px;
+    color: red;
+}
+
+.underDev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+    transition: font-size 0.4s;
+}
+
+h1:hover{
+    font-size: 50px;
+}

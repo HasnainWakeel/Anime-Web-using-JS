@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./imgs/cartoon.png" type="image/x-icon">
 </head>
+
 <body>
     <div id="main">
         <div id="img-main">
@@ -16,26 +18,40 @@
         </div>
 
         <div class="inpParent">
-            <h2>Sign-Up / Log-In</h2>
-            <div class="name">
-                <input type="text" placeholder="Enter your name" onInput="blurInp(event, 'name')" />
-                <span class="name-error error"></span>
-            </div>
-
-            <div class="pass">
-                <div class="showPass">
-                    <input type="password" placeholder="Enter your password" onInput="blurInp(event, 'pass')" />
-                    <img id="visible" src="./imgs/visiblity on.png" onclick="passVisiblility(event)" />
+            <form onSubmit="submitForm(event)">
+                <h2>Create Account</h2>
+                <div class="name">
+                    <input type="text" id="username" placeholder="Enter your username"
+                        onInput="validateInp(event, 'name')" required />
+                    <span class="name-error error"></span>
                 </div>
-                <span class="pass-error error"></span>
-            </div>
 
-            <div class="submit">
-                <button type="submit">Submit</button>
-            </div>
+                <div class="pass">
+                    <div class="showPass">
+                        <input type="password" id="password" placeholder="Enter your password"
+                            onInput="validateInp(event, 'pass')" required />
+                        <img id="visible" src="./imgs/visiblity on.png" onclick="passVisiblility(event)" />
+                    </div>
+                    <span class="pass-error error"></span>
+                </div>
+
+                <div class="name email">
+                    <input type="text" id="email" placeholder="Enter your email" onInput="validateInp(event, 'email')"
+                        required />
+                    <span class="name-error error email-error"></span>
+                </div>
+
+                <div class="submit">
+                    <div class="sign-in">
+                        <span>Already have an account? <span class="sign-in-text" onClick="signIn()">Log In</span></span>
+                    </div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 
     <script src="./app.js"></script>
 </body>
+
 </html>

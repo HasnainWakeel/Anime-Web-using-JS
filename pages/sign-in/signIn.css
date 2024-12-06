@@ -1,5 +1,5 @@
 body {
-    background-image: url('./imgs/background.jpg');
+    background-image: url('../../imgs/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -92,8 +92,8 @@ input:focus {
     display: flex;
     align-items: center;
     margin-left: 43px;
-    margin-bottom: 5px;
-    width: 300px;
+    margin-bottom: 15px;
+    width: 260px;
 }
 
 .showPass:focus{
@@ -127,18 +127,18 @@ button:hover {
     margin-top: 5px;
 }
 
-.name-error, .pass-error, .email-error {
+.name-error, .pass-error {
     display: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .pass-error{
-    margin-left: 35px;
+    margin-left: 45px;
     
 }
 
 .name-error{
-    margin-left: 10px;
+    margin-left: 45px;
 }
 
 .submit{
@@ -147,20 +147,19 @@ button:hover {
     align-items: center;
 }
 
-.sign-in{
+.sign-up{
     margin-bottom: 20px;
 }
 
-.sign-in-text:hover{
+.sign-up-text:hover{
     cursor: pointer;
     text-decoration: underline 1px rgb(198, 191, 191);
 }
 
-.name{
-    width: 250px;
+#name{
+    width: 220px;
     margin-left: 43px;
 }
-
 
 @media screen and (min-width: 2560px) {
     .img {

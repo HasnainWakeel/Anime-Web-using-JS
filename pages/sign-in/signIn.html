@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up / Log-In</title>
+    <link rel="stylesheet" href="./signIn.css">
+    <link rel="shortcut icon" href="../../imgs/cartoon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="main">
+
+        <div class="inpParent">
+            <form onSubmit="checkUser(event)">
+                <h2>Sign-Up / Log-In</h2>
+                <div class="name">
+                    <input type="text" id="name" placeholder="Enter your name" onInput="blurInp(event, 'name')" />
+                    <span class="name-error error"></span>
+                </div>
+
+                <div class="pass">
+                    <div class="showPass">
+                        <input type="password" id="pass" placeholder="Enter your password"
+                            onInput="blurInp(event, 'pass')" />
+                        <img id="visible" src="../../imgs/visiblity on.png" onclick="passVisiblility(event)" />
+                    </div>
+                    <span class="pass-error error"></span>
+                </div>
+
+                <div class="submit">
+                    <div class="sign-up">
+                        <span class="sign-up-text" onClick="signUp()">Click here if you don't have an account</span>
+                    </div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./signIn.js"></script>
+</body>
+
+</html>
