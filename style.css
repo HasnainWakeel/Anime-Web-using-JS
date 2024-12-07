@@ -171,11 +171,12 @@ button:hover {
     .inpParent {
         border-radius: 20px;
         max-width: 800px;
-        height: 600px;
+        height: 740px;
+        padding: 20px;
     }
 
     h2 {
-        font-size: 3.5em;
+        font-size: 4.3em;
         margin-bottom: 40px;
     }
 
@@ -185,6 +186,7 @@ button:hover {
         border: 2px solid #ccc;
         border-radius: 10px;
         font-size: 2em;
+        width: 440px;
     }
     
     input:focus {
@@ -192,31 +194,36 @@ button:hover {
     }
     
     .showPass {
-        width: 520px;
-        margin-left: 100px;
+        width: 540px;
     }
     
     .showPass img {
         margin-left: 20px;
-        width: 45px;
+        width: 50px;
     }
     
     button {
         border-radius: 10px;
-        margin-top: 50px;
         font-size: 2.6em;
         cursor: pointer;
         transition: background-color 0.4s ease;
     }
     
+    .submit{
+        margin-top: 40px;
+    }
+
+    .sign-in span{
+        font-size: 40px;
+    }
+
     .error {
         font-size: 1.8em;
     }
     
-    .pass-error{
-        margin-left: 115px;
-    }
-    
+    .name{
+        width: 100%;
+    }    
 }
 
 

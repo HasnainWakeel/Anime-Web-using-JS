@@ -15,13 +15,20 @@ body {
 
 .logo img{
     width: 30%;
+    transition: width 0.4s;
+    cursor: pointer;
+}
+
+.logo img:hover{
+    width: 34%;
+    transition: width 0.4s;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 85%;
 }
 
 .nav{
@@ -51,20 +58,30 @@ li:hover{
 }
 
 .items{
-    /* background-color: aqua; */
-    width: 90%;
+    width: 74%;
 }
 
 button{
     width: 20%;
     font-size: 20px;
-    color: red;
+    color: white;
+    background-color: red;
+    transition: font-weight 0.2s;
+    transition: width 0.4s;
+    cursor: pointer;
+}
+
+button:hover{
+    width: 22%;
+    font-size: 23px;
+    font-weight: bolder;
 }
 
 .underDev{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90vh;
 }
 
 h1{
@@ -76,4 +93,156 @@ h1{
 
 h1:hover{
     font-size: 50px;
+}
+
+@media screen and (min-width: 2560px) {    
+    .logo img{
+        width: 70%;
+    }
+    
+    .logo img:hover{
+        width: 74%;
+    }
+    
+    nav{
+        width: 90%;
+    }
+
+    ul{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+    }
+    
+    li{
+        font-size: 50px;
+    }
+    
+    li:hover{
+        font-size: 53px;
+    }
+    
+    .items{
+        width: 40%;
+    }
+    
+    button{
+        width: 10%;
+        font-size: 40px;
+    }
+    
+    button:hover{
+        width: 12%;
+        font-size: 43px;
+    }
+    
+    h1{
+        font-size: 100px;
+    }
+    
+    h1:hover{
+        font-size: 115px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {    
+    body {
+        background-image: url('../../imgs/background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    #main {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(19, 19, 19, 0.8);
+    }
+    
+    .logo img{
+        width: 10%;
+        transition: width 0.4s;
+        cursor: pointer;
+    }
+    
+    .logo img:hover{
+        width: 14%;
+        transition: width 0.4s;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .nav{
+        background-color: rgba(125, 125, 125, 0.788);
+        display: flex;
+        justify-content: center;
+        background-color: aqua;
+        width: 100%;
+    }
+    
+    ul{
+        display: flex;
+        gap: 10px;
+        list-style: none;
+    }
+    
+    li{
+        font-size: 10px;
+        cursor: pointer;
+        transition: font-size 0.4s;
+        color: white;
+    
+    }
+    
+    li:hover{
+        font-size: 13px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    .items{
+        width: 44%;
+    }
+    
+    button{
+        width: 10%;
+        font-size: 10px;
+        color: white;
+        background-color: red;
+        transition: font-weight 0.2s;
+        transition: width 0.4s;
+        cursor: pointer;
+    }
+    
+    button:hover{
+        width: 12%;
+        font-size: 13px;
+        font-weight: bolder;
+    }
+    
+    .underDev{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+    
+    h1{
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+        transition: font-size 0.4s;
+    }
+    
+    h1:hover{
+        font-size: 30px;
+    }
 }

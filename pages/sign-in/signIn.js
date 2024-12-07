@@ -8,6 +8,9 @@ function blurInp(e, checkInp) {
         if (e.target.value.length < 3) {
             nameError.innerText = 'Name should be at least 3 characters';
             nameError.style.display = 'block';
+            if (e.target.value.length === 0) {
+                nameError.style.display = 'none';
+            }
             return;
         }
         nameError.style.display = 'none';
@@ -17,6 +20,9 @@ function blurInp(e, checkInp) {
         if (e.target.value.length < 9) {
             passError.innerText = 'Password should be at least 9 characters';
             passError.style.display = 'block';
+            if (e.target.value.length === 0) {
+                passError.style.display = 'none';
+            }
             return;
         }
         passError.style.display = 'none';

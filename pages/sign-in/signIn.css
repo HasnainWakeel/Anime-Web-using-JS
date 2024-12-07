@@ -11,50 +11,15 @@ body {
 #main {
     height: 100vh;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgba(19, 19, 19, 0.8);
-    padding: 20px;
-}
-
-#img-main {
-    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(19, 19, 19, 0.8);
 }
-
-.img {
-    width: 100%;
-    max-width: 580px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-
-.img img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: opacity 0.5s ease, transform 0.3s ease;
-    cursor: pointer;
-}
-
-.img img:hover {
-    opacity: 0.9;
-    transform: scale(1.05);
-}
-
 
 .inpParent {
     background: rgba(0, 0, 0, 0.717);
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 100%;
     max-width: 400px;
     color: #fff;
@@ -162,20 +127,15 @@ button:hover {
 }
 
 @media screen and (min-width: 2560px) {
-    .img {
-        max-width: 1280px;
-        border-radius: 20px;
-    }
-
     .inpParent {
         border-radius: 20px;
         max-width: 800px;
-        height: 600px;
+        height: 630px;
     }
 
     h2 {
-        font-size: 3.5em;
-        margin-bottom: 40px;
+        font-size: 4.3em;
+        margin-bottom: 50px;
     }
 
     input {
@@ -186,25 +146,38 @@ button:hover {
         font-size: 2em;
     }
     
+    #name{
+        width: 440px;
+        
+    }
+    
     input:focus {
         border: 2px solid #444543;
     }
     
     .showPass {
-        width: 520px;
-        margin-left: 100px;
+        width: 540px;
     }
     
     .showPass img {
         margin-left: 20px;
-        width: 45px;
+        width: 50px;
     }
     
+    .submit{
+        margin-top: 50px;
+    }
+
+    .submit span{
+        font-size: 35px;
+
+    }
+
     button {
         border-radius: 10px;
-        margin-top: 50px;
-        font-size: 2.6em;
+        font-size: 2.8em;
         cursor: pointer;
+        margin-top: 15px;
         transition: background-color 0.4s ease;
     }
     
